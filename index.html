@@ -13,7 +13,7 @@
 
       if (isMobile) {
           // Redirect to mobile page
-          window.location.pathname = "/23apr24/indexm.html";
+          window.location.pathname = "/pl/indexm.html";
       } 
   }
 
@@ -89,7 +89,7 @@ top: -163px;
 
 
 <!-- Modal -->
-<div class="modal fade" style="opacity: 0.8; display: none;" id="exampleModalLong" tabindex="-1" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+<div class="modal fade" style="display: none;" id="exampleModalLong" tabindex="-1" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
 <div class="modal-dialog" role="document">
   <div class="modal-content">
     <div class="modal-header">
@@ -132,8 +132,9 @@ height = window.screen.height
 if (width < 1800 && height < 1000)  {
   document.body.style.zoom = "70%"
 }
-
-
+var myModal = new bootstrap.Modal(document.getElementById('exampleModalLong'), {
+ backdrop: false // This disables the backdrop
+});
 </script>
  
 

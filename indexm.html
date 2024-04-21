@@ -68,7 +68,7 @@
   
   
   <!-- Modal -->
-  <div class="modal fade" style="opacity: 0.8; display: none;" id="exampleModalLong" tabindex="-1" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal fade" style="display: none;" id="exampleModalLong" tabindex="-1" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -108,7 +108,9 @@
   </script>
   
   <script>
-  
+  var myModal = new bootstrap.Modal(document.getElementById('exampleModalLong'), {
+ backdrop: false // This disables the backdrop
+});
   
   
   </script>
